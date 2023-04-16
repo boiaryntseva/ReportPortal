@@ -1,4 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import libs.ConfigProperties;
+import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,6 +14,8 @@ import java.time.Duration;
 public class BaseTest {
     WebDriver webDriver;
     Logger logger = Logger.getLogger(getClass());
+    public ConfigProperties configProperties = ConfigFactory.create(ConfigProperties.class);
+    protected String baseUrl = configProperties.base_url();
 
     @Before
 
@@ -28,7 +32,7 @@ public class BaseTest {
     @Test
 
     public void openHomePage(){
-        webDriver.get("http://localhost:8080/");
+        webDriver.get(baseUrl);
     }
 }
 
