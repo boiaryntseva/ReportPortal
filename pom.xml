@@ -42,6 +42,12 @@
             <artifactId>owner</artifactId>
             <version>1.0.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire</artifactId>
+            <version>3.0.0</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 
 
