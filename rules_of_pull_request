@@ -1,0 +1,10 @@
+Pull request should be created for each separate task from the homework
+Naming and general approach should stick to the conception described in https://betterprogramming.pub/how-to-create-a-great-pull-request-in-just-5-steps-c49086c6d647
+Briefly:
+ - branch name should reflect the problem solved
+ - commit name - short decriptoon of what was added or changed
+ - commit message - description if needed and providing evidences
+ 
+Pull request should be sent to the Mentor using Teams
+
+Merging is possible only after approving it by the reviewer
