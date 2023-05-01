@@ -24,12 +24,13 @@ public class LaunchesTest extends BaseTest {
 //    }
 
     @Test
-    public void loginToReportPortal() {
+    public void demonstrationLaunchSectionVerification() {
         loginPage.openLoginPage()
                 .enterTextInNameInput(inputName)
                 .enterTextInPasswordInput(password)
                 .clickOnLoginButton()
-                .clickOnLaunchesSideBarItem();
+                .clickOnLaunchesSideBarItem()
+                .verifyDemonstrationLaunchSection("Suite > Test > Step > Log");
 
     }
 }
