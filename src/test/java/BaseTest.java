@@ -4,12 +4,14 @@ import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
 
 import java.time.Duration;
-
+@Execution(ExecutionMode.CONCURRENT)
 public class BaseTest {
     WebDriver webDriver;
     Logger logger = Logger.getLogger(getClass());
