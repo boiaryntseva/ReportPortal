@@ -29,4 +29,16 @@ public class ParentPage {
             Assert.fail("Can not work with element " + e);
         }
     }
+
+    protected void clickOnElement(WebElement webElement) {
+        try {
+            String name = webElement.getAccessibleName();
+            webElement.click();
+            logger.info("" + name + " was clicked");
+        } catch (Exception e) {
+            logger.error("Can not work with element " + e);
+            Assert.fail("Can not work with element " + e);
+        }
+
+    }
 }
