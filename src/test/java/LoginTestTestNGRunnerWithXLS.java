@@ -1,4 +1,4 @@
-import libs.SpreadsheetData;
+import libs.SpreadSheetData;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -12,7 +12,7 @@ public class LoginTestTestNGRunnerWithXLS extends BaseTestTestNGRunner {
     @DataProvider(name = "excelData")
     public Iterator<Object[]> getInputData() throws IOException {
         InputStream inputStream = new FileInputStream(configProperties.DATA_FILE_PATH() + "testDataExample.xls");
-        return SpreadsheetData.getDataFromExcel(inputStream, "validLogOn").iterator();
+        return SpreadSheetData.getDataFromExcel(inputStream, "validLogOn").iterator();
     }
 
     @Test(dataProvider = "excelData")

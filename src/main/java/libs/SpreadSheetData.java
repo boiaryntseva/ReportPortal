@@ -12,11 +12,11 @@ import java.util.Date;
 import java.util.List;
 
 
-public class SpreadsheetData {
+public class SpreadSheetData {
 
     private transient Collection<Object[]> data;
 
-    public SpreadsheetData(final InputStream excelInputStream, final String sheetName) throws IOException {
+    public SpreadSheetData(final InputStream excelInputStream, final String sheetName) throws IOException {
         this.data = loadFromSpreadsheet(excelInputStream, sheetName);
     }
 

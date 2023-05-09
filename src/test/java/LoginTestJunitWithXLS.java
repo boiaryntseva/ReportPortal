@@ -1,4 +1,4 @@
-import libs.SpreadsheetData;
+import libs.SpreadSheetData;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -22,7 +22,7 @@ public class LoginTestJunitWithXLS extends BaseTest {
         @Parameterized.Parameters
         public static Collection testData() throws IOException {
             InputStream inputStream = new FileInputStream(configProperties.DATA_FILE_PATH() + "testDataExample.xls");
-            return new SpreadsheetData(inputStream, "validLogOn").getData();
+            return new SpreadSheetData(inputStream, "validLogOn").getData();
         }
 
         @Test
