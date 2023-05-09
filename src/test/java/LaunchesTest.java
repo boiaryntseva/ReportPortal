@@ -1,12 +1,4 @@
-import libs.SpreadsheetData;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Collection;
 
 public class LaunchesTest extends BaseTest {
     String inputName = "kate";
