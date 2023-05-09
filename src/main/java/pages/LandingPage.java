@@ -24,7 +24,13 @@ public class LandingPage extends ParentPage {
     }
 
     public LandingPage verifyLandingPageIsLoaded(){
+        Utils.waitABit(5);
         Assert.assertTrue("Side bar menu is not there",sideBar.isDisplayed());
+        return this;
+    }
+    public LandingPage verifyLandingPageIsNotLoaded(){
+        Utils.waitABit(5);
+        Assert.assertFalse("Side bar menu is not there",sideBar.isDisplayed());
         return this;
     }
 }

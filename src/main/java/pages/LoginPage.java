@@ -40,6 +40,7 @@ public class LoginPage extends ParentPage {
     }
 
     public LandingPage clickOnLoginButton() {
+        Utils.waitABit(3);
         clickOnElement(buttonLogin);
         return new LandingPage(webDriver);
     }
